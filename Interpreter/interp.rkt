@@ -41,9 +41,6 @@
                             (cond 
                               ((= op 1) (+ num1 num2))
                               ((= op 2) (* num1 num2))
-                                    ;; -----------------------
-                                    ;; INSERT YOUR CODE HERE 
-                                    ;; -----------------------
                               ((= op 3) 
                                    (/ num1 num2)
                                    )
@@ -60,9 +57,6 @@
                             (cond 
                               ((= op 1) (cons (+ (* num1 num2bot) num2top) num2bot))
                               ((= op 2) (cons (* num1 num2top) num2bot))
-                              ;; -----------------------
-                              ;; INSERT YOUR CODE HERE 
-                              ;; -----------------------
                               ((= op 3) (cons (* num1 num2bot) num2top))
                               (else (cons (- (* num1 num2bot) num2top) num2bot))
 
@@ -79,9 +73,6 @@
                             (cond 
                               ((= op 1) (cons (+ (* num1bot num2) num1top) num1bot))
                               ((= op 2) (cons (* num1top num2) num1bot))
-                              ;; -----------------------
-                              ;; INSERT YOUR CODE HERE 
-                              ;; -----------------------
                               ((= op 3) (cons num1top (* num1bot num2)))
                               (else (cons (- num1top (* num1bot num2)) num1bot))
 
@@ -98,9 +89,6 @@
                             (cond 
                               ((= op 1) (cons (+ (* num1top num2bot) (* num1bot num2top)) (* num1bot num2bot))) ;; add
                               ((= op 2) (cons (* num1top num2top) (* num1bot num2bot))) ;; multiply
-                              ;; -----------------------
-                              ;; INSERT YOUR CODE HERE 
-                              ;; -----------------------
                               ((= op 3) (cons (* num1top num2bot) (* num2top num1bot)))
                               (else (cons (- (* num1top num2bot) (* num1bot num2top)) (* num1bot num2bot)))
 
@@ -114,9 +102,6 @@
                         (if (zero? num1)
                           (bool-val #t)
                           (bool-val #f))
-                          ;; -----------------------
-                          ;; INSERT YOUR CODE HERE 
-                          ;; -----------------------
                         (if (zero? (car num1))
                            (bool-val #t)
                            (bool-val #f))
@@ -132,13 +117,6 @@
                (let ((val1 (value-of exp1 env)))
                  (value-of body
                            (extend-env var val1 env))))
-
-            
-
-      ;; -----------------------
-      ;; INSERT YOUR CODE HERE 
-      ;; -----------------------
-
 
       (list-exp () (list-val '()))
 

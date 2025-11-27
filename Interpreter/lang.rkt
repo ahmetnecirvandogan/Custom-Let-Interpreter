@@ -14,13 +14,6 @@
      symbol)
     (number (digit (arbno digit)) number)
     (number ("-" digit (arbno digit)) number)
-
-    ;;
-    ;; -----------------------
-    ;; INSERT YOUR CODE HERE 
-    ;; -----------------------
-
-
     ;; -----------------------
   ))
 
@@ -35,11 +28,6 @@
     (expression
      ("zero?" "(" expression ")")
      zero?-exp)
-
-    ;; -----------------------
-    ;; INSERT YOUR CODE HERE 
-    ;; -----------------------
-
     
     (expression
      ("let" identifier "=" expression "in" expression)

@@ -13,11 +13,6 @@
    (value number?))
   (bool-val
    (boolean boolean?))
-  
-  ;; -----------------------
-  ;; INSERT YOUR CODE HERE 
-  ;; -----------------------
-  
   (rational-val
    (rational-pair pair?))
   (list-val
@@ -38,8 +33,7 @@
       (num-val (num) num)
       (else (expval-extractor-error 'num v)))))
 
-;; -----------------------
-;; INSERT YOUR CODE HERE 
+
 ;; -----------------------
 
 (define expval->list

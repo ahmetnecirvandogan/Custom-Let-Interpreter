@@ -21,9 +21,6 @@
   (lambda ()
      (extend-env
       'v (num-val 3)
-      ;; -----------------------
-      ;; INSERT YOUR CODE HERE 
-      ;; -----------------------
       (extend-env 
        'x (num-val 4)   
        (extend-env 
